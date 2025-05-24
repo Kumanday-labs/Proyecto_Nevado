@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,20 +19,14 @@ jobs:
       with:
         node-version: 18
 
-    - name: Lint
-      run: npm run lint
-
-    - name: Build (opcional)
-      run: npm run build
-      
     - name: Lint frontend
+      working-directory: ./frontend
       run: |
-        cd frontend
         npm ci
         npm run lint
 
     - name: Lint backend
+      working-directory: ./backend
       run: |
-        cd ../backend
         npm ci
         npm run lint
