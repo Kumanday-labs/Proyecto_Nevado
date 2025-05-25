@@ -10,7 +10,7 @@ Este documento explica cómo colaborar en este repositorio. Si haces parte del e
 
 ```
 git clone git@github.com:kumanday-labs/Proyecto_Comercio_Local.git
-cd Proyecto_Nevado
+cd Proyecto_Comercio_Local
 cp .env.example .env
 npm install
 ```
