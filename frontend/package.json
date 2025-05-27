@@ -1,0 +1,24 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Aplicación web construida en React. Mostrará productos, permitirá comprar y gestionar pedidos.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "lint": "eslint .",
+    "build": "vite build",
+    "test": "echo \"(sin tests aún)\"",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.1.0",
+    "prettier": "^3.5.3"
+  }
+}
